@@ -13,7 +13,7 @@ SELECT * FROM directors;
 -- create the actors table
 
 CREATE TABLE actors (
-	actors_id SERIAL PRIMARY KEY,
+	actor_id SERIAL PRIMARY KEY,
 	first_name VARCHAR(30),
 	last_name VARCHAR(30),
 	gender CHAR(1),

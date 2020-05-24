@@ -11,3 +11,16 @@ CREATE TABLE movies (
 );
 
 SELECT * FROM movies;
+
+-- Creating the movie revenues table  (with a foreign key)
+
+CREATE TABLE movie_revenues (
+	revenue_id SERIAL PRIMARY KEY,
+	movie_id INT REFERENCES movies (movie_id),
+	domestic_taking NUMERIC(6,2),
+	international_taking NUMERIC(6,2)
+);
+
+SELECT * FROM movie_revenues;
+
+DROP TABLE movie_revenues;
